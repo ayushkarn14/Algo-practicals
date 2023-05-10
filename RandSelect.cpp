@@ -25,7 +25,7 @@ int RandomizedSelect(int *a, int f, int l, int i)
     int pivot = Lomuto_p(a, f, l);
     int k = pivot - f + 1;
     if (i == k)
-        return a[i];
+        return a[pivot];
     else if (i < k)
     {
         return RandomizedSelect(a, f, pivot - 1, i);
